@@ -25,6 +25,7 @@ document.getElementById("qty2").innerText=quantity2
 }
 }
 
+
 function order(){
 
 let message=`Hi, I want to order:
