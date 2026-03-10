@@ -1,3 +1,5 @@
+let price = 60
+
 let quantity=1
 let quantity2=1
 
@@ -25,13 +27,16 @@ document.getElementById("qty2").innerText=quantity2
 }
 }
 
-
 function order(){
+
+let total = quantity * price
 
 let message=`Hi, I want to order:
 
 Product: Spice Crew Cashew
 Quantity: ${quantity}
+Price per pack: ₹60
+Total: ₹${total}
 
 Please share payment details.`
 
@@ -43,10 +48,14 @@ window.open(url)
 
 function order2(){
 
+let total = quantity2 * price
+
 let message=`Hi, I want to order:
 
 Product: Mint Mond Cashew
 Quantity: ${quantity2}
+Price per pack: ₹60
+Total: ₹${total}
 
 Please share payment details.`
 
