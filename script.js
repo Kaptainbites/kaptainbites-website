@@ -59,7 +59,7 @@ Total: ₹${total}
 
 Please share payment details.`
 
-let url=`https://wa.me/91YOURNUMBER?text=${encodeURIComponent(message)}`
+let url=`https://wa.me/917760172150?text=${encodeURIComponent(message)}`
 
 window.open(url)
 }
