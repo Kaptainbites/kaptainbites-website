@@ -36,6 +36,7 @@ radial-gradient(circle at top right, rgba(76,175,122,0.18), transparent 20%),
 var(--bg);
 color:var(--text);
 line-height:1.6;
+overflow-x:hidden;
 }
 
 img{
@@ -259,10 +260,11 @@ color:var(--muted);
 
 .hero-visual{
 position:relative;
-min-height:600px;
 display:flex;
-align-items:center;
-justify-content:center;
+align-items:flex-end;
+justify-content:flex-start;
+flex-direction:column;
+gap:16px;
 }
 
 .hero-card{
@@ -273,7 +275,7 @@ box-shadow:var(--shadow);
 .hero-card--main{
 position:relative;
 width:min(100%, 500px);
-padding:20px 20px 220px;
+padding:20px;
 background:linear-gradient(160deg, rgba(255,255,255,0.92), rgba(234,246,240,0.96));
 border:1px solid rgba(255,255,255,0.72);
 }
@@ -319,13 +321,14 @@ color:var(--muted);
 }
 
 .hero-card--floating{
-position:absolute;
-right:-14px;
-bottom:42px;
-width:250px;
+position:relative;
+align-self:flex-end;
+margin-top:0;
+width:min(100%, 280px);
 padding:22px;
 background:var(--surface-strong);
 color:#f4f1e8;
+z-index:2;
 }
 
 .floating-label{
@@ -675,15 +678,6 @@ transform:none;
 grid-template-columns:repeat(2, minmax(0, 1fr));
 }
 
-.hero-card--main{
-padding-bottom:250px;
-}
-
-.hero-card--floating{
-right:18px;
-bottom:22px;
-}
-
 .site-footer{
 grid-template-columns:1fr;
 }
@@ -700,40 +694,84 @@ justify-self:start;
 
 .site-header{
 margin-top:14px;
-padding:18px;
-border-radius:28px;
+padding:16px;
+border-radius:24px;
 flex-wrap:wrap;
-justify-content:center;
+justify-content:flex-start;
+gap:14px;
+position:static;
 }
 
 .site-nav{
 order:3;
 width:100%;
-justify-content:center;
-flex-wrap:wrap;
+justify-content:flex-start;
+flex-wrap:nowrap;
+gap:10px;
+overflow-x:auto;
+padding-bottom:4px;
+scrollbar-width:none;
+}
+
+.site-nav::-webkit-scrollbar{
+display:none;
+}
+
+.site-nav a{
+white-space:nowrap;
+padding:10px 14px;
+background:rgba(255,255,255,0.7);
+border:1px solid var(--line);
+border-radius:999px;
+}
+
+.site-nav a::after{
+display:none;
+}
+
+.header-cta{
+width:100%;
 }
 
 .hero{
 grid-template-columns:1fr;
 padding-top:42px;
+gap:28px;
 }
 
 .hero-copy h1{
 max-width:12ch;
 }
 
+.hero-copy p{
+font-size:1rem;
+}
+
+.hero-actions{
+flex-direction:column;
+align-items:stretch;
+}
+
+.hero-actions .btn{
+width:100%;
+}
+
 .hero-visual{
-min-height:auto;
-padding-bottom:56px;
+align-items:stretch;
 }
 
 .hero-card--main{
-padding-bottom:20px;
+width:100%;
+padding:18px;
 }
 
 .hero-card--floating{
-right:10px;
-bottom:0;
+position:relative;
+right:auto;
+bottom:auto;
+margin-top:0;
+width:100%;
+align-self:stretch;
 }
 
 .story-grid,
@@ -745,7 +783,7 @@ grid-template-columns:1fr;
 }
 
 .hero-metrics{
-grid-template-columns:1fr;
+grid-template-columns:repeat(2, minmax(0, 1fr));
 }
 
 .product-card__head,
@@ -754,14 +792,37 @@ flex-direction:column;
 align-items:flex-start;
 }
 
+.product-order .btn{
+width:100%;
+}
+
+.quantity-control{
+width:100%;
+justify-content:space-between;
+}
+
+.story-card,
+.news-card,
+.investor-panel,
+.product-card__body,
+.feature-card{
+padding:22px;
+}
+
+.product-card__media{
+min-height:240px;
+padding:24px 20px 10px;
+}
+
 .site-footer{
+gap:12px;
 padding-bottom:100px;
 }
 }
 
 @media (max-width: 560px){
 .section-pad{
-padding:68px 0;
+padding:56px 0;
 }
 
 .brand-mark__name{
@@ -769,11 +830,20 @@ font-size:1.7rem;
 }
 
 .section-heading h2{
-font-size:2.5rem;
+font-size:2.15rem;
 }
 
 .hero-copy h1{
-font-size:3.4rem;
+font-size:2.85rem;
+max-width:10ch;
+}
+
+.hero-metrics{
+grid-template-columns:1fr;
+}
+
+.hero-metrics article{
+padding:16px;
 }
 
 .hero-card--main,
@@ -782,16 +852,72 @@ font-size:3.4rem;
 border-radius:24px;
 }
 
+.promise-list article{
+grid-template-columns:1fr;
+gap:10px;
+padding:18px;
+}
+
+.promise-list span{
+font-size:1.8rem;
+}
+
+.product-card{
+border-radius:24px;
+}
+
+.product-card__media{
+min-height:210px;
+}
+
+.product-card__head h3{
+font-size:1.2rem;
+}
+
+.product-points{
+gap:6px;
+}
+
+.news-card,
+.feature-card{
+padding:20px;
+}
+
+.site-footer{
+padding:12px 0 92px;
+}
+
 .hero-card--floating{
 position:relative;
 right:auto;
 bottom:auto;
 width:100%;
-margin-top:18px;
+margin-top:0;
+padding:20px;
 }
 
 .whatsapp-float{
-right:14px;
-bottom:14px;
+right:12px;
+bottom:12px;
+padding:13px 16px;
+font-size:0.95rem;
+}
+}
+
+@media (max-width: 380px){
+.hero-copy h1{
+font-size:2.45rem;
+}
+
+.brand-mark__name{
+font-size:1.5rem;
+}
+
+.section-heading h2{
+font-size:1.9rem;
+}
+
+.site-header{
+padding:14px;
 }
 }
