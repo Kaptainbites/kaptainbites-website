@@ -273,7 +273,7 @@ box-shadow:var(--shadow);
 .hero-card--main{
 position:relative;
 width:min(100%, 500px);
-padding:20px;
+padding:20px 20px 220px;
 background:linear-gradient(160deg, rgba(255,255,255,0.92), rgba(234,246,240,0.96));
 border:1px solid rgba(255,255,255,0.72);
 }
@@ -675,6 +675,15 @@ transform:none;
 grid-template-columns:repeat(2, minmax(0, 1fr));
 }
 
+.hero-card--main{
+padding-bottom:250px;
+}
+
+.hero-card--floating{
+right:18px;
+bottom:22px;
+}
+
 .site-footer{
 grid-template-columns:1fr;
 }
@@ -716,6 +725,10 @@ max-width:12ch;
 .hero-visual{
 min-height:auto;
 padding-bottom:56px;
+}
+
+.hero-card--main{
+padding-bottom:20px;
 }
 
 .hero-card--floating{
