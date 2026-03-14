@@ -3,20 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KaptainBites | Premium Flavoured Nut Snacks</title>
-<meta name="description" content="KaptainBites crafts premium flavoured nut snacks with bold Indian taste, hygienic processing, and packaging designed for modern D2C shoppers.">
+<title>KaptainBites | Flavour-First Premium Nut Snacks</title>
+<meta name="description" content="KaptainBites is a modern Indian snack brand serving premium flavoured nut snacks with bold taste, hygienic processing, and easy WhatsApp ordering.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page-shell">
+<div class="site-wrap">
+<div class="announcement-bar">
+<div class="announcement-bar__track" aria-label="Now taking direct orders on WhatsApp for KaptainBites signature snacks.">
+<div class="announcement-bar__group">
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+</div>
+<div class="announcement-bar__group" aria-hidden="true">
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+<span class="announcement-bar__item">Now taking direct orders on WhatsApp for KaptainBites signature snacks.</span>
+<span class="announcement-bar__separator" aria-hidden="true"></span>
+</div>
+</div>
+</div>
+
 <header class="site-header">
-<a href="#top" class="brand-mark" aria-label="KaptainBites home">
-<span class="brand-mark__eyebrow">Premium snack house</span>
-<span class="brand-mark__name">KaptainBites</span>
+<a href="#top" class="brand" aria-label="KaptainBites home">
+<span class="brand__logo">
+<img src="images/logo-header.png" alt="KaptainBites logo">
+</span>
 </a>
 
 <nav class="site-nav" aria-label="Primary navigation">
@@ -26,253 +52,140 @@
 <a href="#investors">Investors</a>
 </nav>
 
-<a href="#products" class="header-cta">Shop Range</a>
+<div class="site-header__utilities">
+<form class="site-search" role="search">
+<label class="visually-hidden" for="product-search">Search products</label>
+<input id="product-search" type="search" placeholder="Search products">
+</form>
+</div>
 </header>
 
 <main id="top">
-<section class="hero section-pad">
-<div class="hero-copy reveal">
-<span class="eyebrow">Modern Indian nut snacks</span>
-<h1>Bold flavour. Premium crunch. A snack brand built to stand out.</h1>
+<section class="hero-video-band reveal" aria-label="KaptainBites hero banner">
+<div class="hero-video-band__frame">
+<img class="hero-video-band__media" src="images/hero.png" alt="KaptainBites premium nuts assortment">
+<div class="hero-video-band__overlay">
+<div class="hero-video-band__inner">
+<a href="#products" class="btn btn-primary hero-video-band__cta">Shop Now</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="hero section">
+<div class="hero__copy reveal">
+<span class="eyebrow">Flavour-first Indian nut snacks</span>
+<h1>Premium nut snacks with bold flavour and clean crunch.</h1>
 <p>
-KaptainBites blends elevated flavour profiles, hygienic processing, and polished packaging into a D2C-ready snack experience made for modern Indian consumers.
+KaptainBites brings together premium nuts, craveable masala-led flavour, and hygienic packaging for customers who want a better everyday snack.
 </p>
-
-<div class="hero-actions">
-<a href="#products" class="btn btn-primary">Explore Products</a>
-<a href="#company" class="btn btn-secondary">Why KaptainBites</a>
 </div>
 
-<div class="hero-metrics">
-<article>
-<strong>100%</strong>
-<span>Premium grade nuts</span>
-</article>
-<article>
-<strong>2</strong>
-<span>Signature flavour launches</span>
-</article>
-<article>
-<strong>WhatsApp</strong>
-<span>Fast order journey</span>
-</article>
-</div>
-</div>
-
-<div class="hero-visual reveal">
-<div class="hero-card hero-card--main">
-<span class="product-pill">Featured launch</span>
-<img src="images/hero.png" class="hero-img" alt="KaptainBites premium snack collection">
-<div class="hero-card__content">
-<p class="hero-card__title">Crafted for premium retail shelves and direct-to-consumer growth.</p>
-<p class="hero-card__text">Designed to feel giftable, hygienic, flavour-rich, and instantly recognizable.</p>
-</div>
-</div>
-
-<div class="hero-card hero-card--floating">
-<span class="floating-label">Signature promise</span>
-<ul>
-<li>Bold masala-forward taste</li>
-<li>Secure sealed packaging</li>
-<li>Premium quality positioning</li>
-</ul>
-</div>
-</div>
+<aside class="hero__support reveal" aria-label="How ordering works">
+<span class="hero__support-eyebrow">Ordering made simple</span>
+<h2>Choose a flavour, pick a quantity, and order directly on WhatsApp.</h2>
+<ol class="hero__support-list">
+<li>Pick your product</li>
+<li>Set the quantity</li>
+<li>Send the order on WhatsApp</li>
+</ol>
+<p class="hero__support-note">Payment details can be shared once your order request is received.</p>
+</aside>
 </section>
 
-<section id="company" class="story section-pad">
-<div class="section-heading reveal">
-<span class="eyebrow">Our Company</span>
-<h2>Built to bring premium snacking into everyday Indian moments.</h2>
-</div>
-
-<div class="story-grid">
-<article class="story-card reveal">
-<p class="story-lead">
-KaptainBites is a fast-growing Indian snack brand focused on flavoured nuts that feel elevated, hygienic, and modern from first glance to last bite.
-</p>
-<p>
-We pair premium ingredients with distinctive flavour layering, clean processing, and packaging that supports both D2C trust and retail shelf presence.
-</p>
-</article>
-
-<div class="promise-list reveal">
-<article>
-<span>01</span>
-<div>
-<h3>Premium quality ingredients</h3>
-<p>Carefully selected nuts with a cleaner, richer snacking profile.</p>
-</div>
-</article>
-<article>
-<span>02</span>
-<div>
-<h3>Unique flavour blends</h3>
-<p>Indian-inspired seasoning crafted for repeat craving and strong recall.</p>
-</div>
-</article>
-<article>
-<span>03</span>
-<div>
-<h3>Hygienic processing</h3>
-<p>Consistency, care, and packaging confidence built into each batch.</p>
-</div>
-</article>
-<article>
-<span>04</span>
-<div>
-<h3>Customer-first delivery</h3>
-<p>A friction-light order journey powered by direct WhatsApp conversion.</p>
-</div>
-</article>
-</div>
-</section>
-
-<section class="features section-pad">
-<div class="section-heading reveal">
-<span class="eyebrow">Why Choose KaptainBites</span>
-<h2>A sharper brand experience across product, process, and presentation.</h2>
-</div>
-
-<div class="feature-grid">
-<article class="feature-card reveal">
-<span>Premium Ingredients</span>
-<p>Chosen for quality, crunch, and shelf-worthy appeal.</p>
-</article>
-<article class="feature-card reveal">
-<span>Hygienic Processing</span>
-<p>Made to reassure modern consumers who care about trust and safety.</p>
-</article>
-<article class="feature-card reveal">
-<span>Bold Flavours</span>
-<p>Layered seasoning profiles that feel distinct rather than generic.</p>
-</article>
-<article class="feature-card reveal">
-<span>Secure Packaging</span>
-<p>Freshness-sealed packs designed for gifting, display, and repeat purchase.</p>
-</article>
-</div>
-</section>
-
-<section id="products" class="products-section section-pad">
+<section id="products" class="section products-section">
 <div class="section-heading reveal">
 <span class="eyebrow">Brand Products</span>
-<h2>Premium nut snacks designed for gifting, cravings, and repeat orders.</h2>
+<h2>Choose your flavour and order in minutes.</h2>
+<p class="section-copy">Select your product, choose the quantity, and place your order directly on WhatsApp.</p>
 </div>
 
-<div class="products-grid">
-<article class="product-card reveal" data-product="Spice Crew Cashew" data-price="60">
-<div class="product-card__media product-card__media--spice">
-<span class="product-tag">Best for spice lovers</span>
-<img src="images/hero.png" class="product-img" alt="Spice Crew Cashew by KaptainBites">
-</div>
+<div id="products-grid" class="products-grid"></div>
 
-<div class="product-card__body">
-<div class="product-card__head">
-<div>
-<h3>Spice Crew Cashew</h3>
-<p>Bold, masala-forward roasted cashews with an energetic finish and premium crunch.</p>
-</div>
-<strong>&#8377;60</strong>
-</div>
-
-<ul class="product-points">
-<li>Signature spicy seasoning</li>
-<li>Premium crunchy cashews</li>
-<li>Ideal for evening snacking</li>
-</ul>
-
-<div class="product-order">
-<div class="quantity-control" aria-label="Select quantity for Spice Crew Cashew">
-<button type="button" class="qty-btn" data-action="decrease">-</button>
-<span class="qty-value" data-qty>1</span>
-<button type="button" class="qty-btn" data-action="increase">+</button>
-</div>
-
-<button type="button" class="btn btn-primary order-btn">Order on WhatsApp</button>
-</div>
-</div>
-</article>
-
-<article class="product-card reveal" data-product="Mint Mond Cashew" data-price="60">
-<div class="product-card__media product-card__media--mint">
-<span class="product-tag">Fresh flavour profile</span>
-<img src="images/hero.png" class="product-img" alt="Mint Mond Cashew by KaptainBites">
-</div>
-
-<div class="product-card__body">
-<div class="product-card__head">
-<div>
-<h3>Mint Mond Cashew</h3>
-<p>Refreshing mint-led cashews balanced with masala notes for a cleaner snacking finish.</p>
-</div>
-<strong>&#8377;60</strong>
-</div>
-
-<ul class="product-points">
-<li>Cooling mint flavour</li>
-<li>Balanced masala taste</li>
-<li>Premium everyday snack</li>
-</ul>
-
-<div class="product-order">
-<div class="quantity-control" aria-label="Select quantity for Mint Mond Cashew">
-<button type="button" class="qty-btn" data-action="decrease">-</button>
-<span class="qty-value" data-qty>1</span>
-<button type="button" class="qty-btn" data-action="increase">+</button>
-</div>
-
-<button type="button" class="btn btn-primary order-btn">Order on WhatsApp</button>
-</div>
-</div>
-</article>
+<div id="catalog-empty" class="catalog-empty" hidden>
+<h3>No products matched your search.</h3>
+<p>Try a broader search term or clear the search to view the full KaptainBites catalog.</p>
 </div>
 </section>
 
-<section id="news" class="news-section section-pad">
+<section id="company" class="section company">
+<div class="section-heading reveal">
+<span class="eyebrow">Our Company</span>
+<h2>Better ingredients, bolder flavour, and cleaner everyday snacking.</h2>
+<p class="section-copy">KaptainBites is built for customers who want premium nut snacks that feel tasty, hygienic, and easy to order.</p>
+</div>
+
+<div class="company-layout">
+<article class="company-story reveal">
+<p class="company-story__lead">
+KaptainBites is a modern Indian snack brand focused on flavoured nuts that feel more premium, more polished, and more satisfying than ordinary snack options.
+</p>
+<p>
+We focus on quality ingredients, bold flavour identity, hygienic packaging, and a direct WhatsApp order flow that keeps buying simple.
+</p>
+</article>
+
+<div class="company-points reveal">
+<article>
+<strong>Premium ingredients</strong>
+<p>Quality nuts selected for better taste, crunch, and overall snacking feel.</p>
+</article>
+<article>
+<strong>Bold flavour blends</strong>
+<p>Masala-led flavours designed to be memorable and easy to come back to.</p>
+</article>
+<article>
+<strong>Hygienically packed</strong>
+<p>Clean processing and secure packaging that feel reliable from first look to last bite.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="news" class="section news-section">
 <div class="section-heading reveal">
 <span class="eyebrow">News</span>
-<h2>Momentum is building around flavour expansion and market reach.</h2>
+<h2>The brand is growing across flavour planning, retail conversations, and distribution reach.</h2>
 </div>
 
 <div class="news-grid">
 <article class="news-card reveal">
-<span>Product roadmap</span>
-<h3>New flavour launches are in development.</h3>
-<p>The next wave of products is being shaped to expand recall while keeping the premium KaptainBites identity consistent.</p>
+<span class="news-card__tag">Next up</span>
+<h3>New flavour ideas are being shaped for future drops.</h3>
+<p>KaptainBites is expanding the flavour pipeline to build stronger brand recall and a broader range for different customer moods.</p>
 </article>
 <article class="news-card reveal">
-<span>Retail growth</span>
-<h3>Expansion into new retail markets is underway.</h3>
-<p>The brand is preparing for stronger placement across modern trade, general trade, and gifting-focused channels.</p>
+<span class="news-card__tag">Retail reach</span>
+<h3>Market expansion plans are opening more shelf opportunities.</h3>
+<p>The brand is looking toward stronger retail visibility alongside its direct-to-customer order journey.</p>
 </article>
 <article class="news-card reveal">
-<span>Partnerships</span>
-<h3>Distributor conversations are opening new opportunities.</h3>
-<p>Partnership momentum supports scale, visibility, and better regional distribution depth.</p>
+<span class="news-card__tag">Partners</span>
+<h3>Distributor conversations are supporting scale-ready growth.</h3>
+<p>New partnerships can help KaptainBites expand awareness, product availability, and speed to market.</p>
 </article>
 </div>
 </section>
 
-<section id="investors" class="investors section-pad">
+<section id="investors" class="section investors-section">
 <div class="investor-panel reveal">
-<div class="section-heading">
+<div class="section-heading section-heading--compact">
 <span class="eyebrow">Investor Relations</span>
-<h2>Positioned at the intersection of premium snacking, scalable operations, and D2C-ready branding.</h2>
+<h2>Positioned for growth in a category where taste, trust, and packaging all matter.</h2>
 </div>
 
 <div class="investor-grid">
 <article>
 <h3>Healthy snack demand</h3>
-<p>Consumers are moving toward better-positioned snack brands with stronger quality cues and differentiated flavours.</p>
+<p>Consumers are steadily moving toward better-positioned, quality-led snacking choices.</p>
 </article>
 <article>
 <h3>Scalable production</h3>
-<p>The operating model is built to support larger volumes without compromising processing discipline.</p>
+<p>The operating model is built to support larger volume without losing brand quality cues.</p>
 </article>
 <article>
 <h3>Distribution upside</h3>
-<p>Growth can expand through both direct orders and offline partnerships as awareness compounds.</p>
+<p>Growth can come from both direct orders and stronger offline placement over time.</p>
 </article>
 <article>
 <h3>Contact</h3>
@@ -285,22 +198,19 @@ We pair premium ingredients with distinctive flavour layering, clean processing,
 
 <footer class="site-footer">
 <div>
-<p class="footer-brand">KaptainBites</p>
-<p>Premium flavoured nut snacks for modern Indian consumers.</p>
+<p class="site-footer__brand">KaptainBites</p>
+<p>Premium flavoured nut snacks made for bold cravings and modern Indian consumers.</p>
 </div>
 
-<div>
+<div class="site-footer__meta">
 <p>Email: <a href="mailto:kaptainbites@gmail.com">kaptainbites@gmail.com</a></p>
+<p>Domain: www.kaptainbites.com</p>
 <p>Instagram | Facebook</p>
 </div>
-
-<p class="footer-meta">Copyright 2025 KaptainBites. All rights reserved.</p>
 </footer>
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/917760172150?text=Hi%2C%20I%20want%20to%20know%20more%20about%20KaptainBites%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat with KaptainBites on WhatsApp">
-<span>WhatsApp</span>
-</a>
+<a class="whatsapp-float" href="https://wa.me/917760172150?text=Hi%2C%20I%20want%20to%20know%20more%20about%20KaptainBites%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat with KaptainBites on WhatsApp">WhatsApp</a>
 
 <script src="script.js"></script>
 </body>
